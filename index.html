@@ -1,0 +1,484 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sai Rohit Muralikrishan - Timeline</title> 
+    <meta name="author" content="Sai Rohit Muralikrishan">
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        .profile {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .profile p {
+            margin: 10px 0;
+        }
+
+        .profile img {
+            width: 100%;
+            max-width: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .profile-table {
+            width: 100%;
+            border: 0px;
+            border-spacing: 0px;
+            margin: 0 auto;
+        }
+
+        .profile .name {
+            text-align: center;
+            font-size: 2em;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        /* Timeline styling */
+        .timeline {
+            position: relative;
+            max-width: 900px;
+            margin: 40px auto;
+        }
+
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: #4CAF50;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+        }
+
+        .container {
+            padding: 10px 40px;
+            position: relative;
+            width: 50%;
+        }
+
+        .left {
+            left: 0;
+        }
+
+        .right {
+            left: 50%;
+        }
+
+        /* Circle and logo styling */
+        .circle {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background-color: white;
+            border: 4px solid #4CAF50;
+            border-radius: 50%;
+            top: 15px;
+            z-index: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .circle img {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+        }
+
+        .left .circle {
+            right: -22px; /* Adjust for left-aligned containers */
+        }
+
+        .right .circle {
+            left: -22px; /* Adjust for right-aligned containers */
+        }
+
+        .content {
+            padding: 20px;
+            background-color: white;
+            position: relative;
+            border-radius: 6px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .container.left .content {
+            margin-left: 0;
+            text-align: right;
+        }
+
+        .container.right .content {
+            margin-left: auto;
+        }
+
+        .date {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #4CAF50;
+        }
+
+        .description {
+            font-size: 1em;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 3px 8px;
+            background-color: #333;
+            color: white;
+            border-radius: 5px;
+            font-size: 0.8em;
+            margin: 5px 5px 0 0;
+        }
+
+        .contact-links {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .contact-links a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #4CAF50;
+            font-size: 1.1em;
+        }
+    </style>
+  </head>
+
+  <body>
+
+    <!-- Personal Profile Section -->
+    <div class="profile">
+      <table class="profile-table">
+        <tr>
+          <td style="padding:2.5%;width:63%;vertical-align:middle">
+            <p class="name">
+              Sai Rohit Muralikrishan
+            </p>
+            <p>
+              I am a first-year graduate student at the <a href="https://illinois.edu/">University of Illinois Urbana-Champaign</a>, majoring in Autonomy and Robotics.
+            </p>
+            <p>
+              Previously, I worked as a Machine Learning Engineer at <a href="https://www.capestart.com/">CapeStart</a>, developing text summarization pipelines for medical research articles using large language models like GPT-4 and LangChain.
+            </p>
+            <p>
+              I received my Bachelor's degree in Mechanical Engineering from <a href="https://vit.ac.in/">Vellore Institute of Technology</a>, where I was advised by <a href="https://www.linkedin.com/in/arockia-selvakumar-arockia-doss-13804455/">Professor Arockia Selvakumar Arockia Doss</a>.
+            </p>
+            <p>
+              My research interests lie in the intersection of machine learning, robotics, and computer vision, focusing on developing deployable autonomous systems.
+            </p>
+            <div class="contact-links">
+              <a href="mailto:srm17@illinois.edu">Email</a> / 
+              <a href="data/Sai_Rohit_Murali.pdf">CV</a> / 
+              <a href="data/SaiRohit-bio.txt">Bio</a> / 
+              <a href="tel:+19198678041">Phone</a> / 
+              <a href="https://github.com/RohitMurali18/">Github</a> / 
+              <a href="https://www.linkedin.com/in/sai-rohit-murali/">LinkedIn</a>
+            </div>
+          </td>
+          <td style="padding:2.5%;width:40%;max-width:40%">
+            <a href="images/sai.jpg">
+              <img src="images/sai.jpg" alt="Sai Rohit's profile photo">
+            </a>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Timeline Section -->
+    <h2 style="text-align: left;">Experience</h2>
+
+    <div class="timeline">
+        <div class="container left">
+            <div class="circle">
+                <a href="https://grainger.illinois.edu/" target="_blank">
+                    <img src="images/uiuclogo.png" alt="UIUC Logo">
+                </a>
+            </div>
+            <div class="content">
+                <div class="date">August 2024</div>
+                <h2>University of Illinois - Urbana Champaign</h2>
+                <p class="description"><strong>Meng Robotics and Autonomy</strong></p>
+                <p class="description">Entered UIUC as a graduate robotics student specializing in AI and perception.</p>
+            </div>
+        </div>
+
+        <div class="container right">
+            <div class="circle">
+                <a href="https://www.capestart.com" target="_blank">
+                    <img src="images/capestartlogo.jpeg" alt="Capestart Logo">
+                </a>
+            </div>
+            <div class="content">
+                <div class="date">November 2023 - May 2024</div>
+                <h2>Capestart</h2>
+                <p class="description"><strong>Associate Software Engineer - Machine Learning</strong></p>
+                <p class="description">Optimized data collection and developed a pipeline for medical research summaries using GPT models, improving accuracy and standardization in a GenAI-based literature review tool.</p>
+            </div>
+        </div>
+
+        <div class="container left">
+            <div class="circle">
+                <a href="https://vit.ac.in" target="_blank">
+                    <img src="images/vitlogo.jpg" alt="VIT Logo">
+                </a>
+            </div>
+            <div class="content">
+                <div class="date">August 2023</div>
+                <h2>Vellore Institute of Technology</h2>
+                <p class="description"><strong>Graduation!!!</strong></p>
+                <p class="description">Graduated from VIT with a B.Tech in Mechanical Engineering.</p>
+            </div>
+        </div>
+
+        <div class="container right">
+            <div class="circle">
+                <a href="https://mmforgings.com" target="_blank">
+                    <img src="images/mmforgingslogo.png" alt="MM Forgings Logo">
+                </a>
+            </div>
+            <div class="content">
+                <div class="date">June 2023 - October 2023</div>
+                <h2>MM Forgings</h2>
+                <p class="description"><strong>Automation Intern</strong></p>
+                <p class="description">Part of the industrial Automation division that manufactures low-cost and special-purpose machines.</p>
+            </div>
+        </div>
+
+        <div class="container left">
+            <div class="circle">
+                <a href="https://terrabyte.acs.uwinnipeg.ca/" target="_blank">
+                    <img src="images/uwlogo.png" alt="University of Winnipeg Logo">
+                </a>
+            </div>
+            <div class="content">
+                <div class="date">May 2022 - September 2022</div>
+                <h2>University of Winnipeg - Terrabyte Research Team</h2>
+                <p class="description"><strong>Mitacs Globalink Research Intern</strong></p>
+                <p class="description">Collaborated with Professors Christopher Henry, Michael Beck, and Christopher Bidinosti on digital agriculture, optimizing a server portal, enhancing GUI, and applying power law for model accuracy.</p>
+            </div>
+        </div>
+
+        <div class="container right">
+            <div class="circle">
+                <a href="https://vit.ac.in" target="_blank">
+                    <img src="images/vitlogo.jpg" alt="VIT Logo">
+                </a>
+            </div>
+            <div class="content">
+                <div class="date">June 2021 - August 2021</div>
+                <h2>VIT Chennai - Center of Advanced Data Science</h2>
+                <p class="description"><strong>Summer Research Intern</strong></p>
+                <p class="description">Collaborated with Prof. Shridevi S on algorithms for lane detection and autonomous driving.</p>
+            </div>
+        </div>
+
+        <div class="container left">
+            <div class="circle">
+                <a href="https://www.tvsmotor.com/about-us/overview" target="_blank">
+                    <img src="images/tvslogo.png" alt="TVS Logo">
+                </a>
+            </div>
+            <div class="content">
+                <div class="date">February 2021 - March 2021</div>
+                <h2>TVS</h2>
+                <p class="description"><strong>Intern</strong></p>
+                <p class="description">Interned at TVS Training and Services Limited, contributing to vehicle assembly, engine dismantling, and vehicle systems.</p>
+            </div>
+        </div>
+
+        <div class="container right">
+            <div class="circle">
+                <a href="https://vit.ac.in" target="_blank">
+                    <img src="https://example.com/vit-logo.png" alt="VIT Logo">
+                </a>
+            </div>
+            <div class="content">
+                <div class="date">August 2019</div>
+                <h2>Vellore Institute of Technology</h2>
+                <p class="description"><strong>B.Tech Mechanical Engineering</strong></p>
+                <p class="description">Entered VIT as an undergraduate student majoring in mechanical engineering.</p>
+            </div>
+        </div>
+    </div>
+    <table>
+  <h2 style="text-align: left;">Research Articles</h2>
+  <!-- Research Article 1 -->
+  <tr>
+    <td style="padding:20px;width:75%;vertical-align:middle">
+      <a href="https://ieeexplore.ieee.org/document/9696902">
+        <span class="papertitle">Speed Controlled Lane Switching Embedded Mechanism</span>
+      </a>
+      <br>
+      <a href="#">Sai Rohit Muralikrishnan</a>, 
+      <a href="#">Kalaipriyan Ramalingam</a>, 
+      <a href="#">Sarvesh Krishnan</a>, 
+      <a href="#">S Shridevi</a>
+      <br>
+      <em>i'PACT'2021</em>
+      <br>
+      <a href="https://ieeexplore.ieee.org/document/9696902">IEEE Xplore Link</a>
+      <p>The paper presents an embedded mechanism that uses computer vision and Arduino to assist drivers in switching lanes based on vehicle speed, aiming to enhance road safety and prevent accidents.</p>
+    </td>
+  </tr>
+
+  <!-- Research Article 2 -->
+  <tr>
+    <td style="padding:20px;width:75%;vertical-align:middle">
+      <a href="https://pubs.aip.org/aip/acp/article-abstract/3216/1/050004/3305247/Neuro-Mechanical-AI-fusion-A-paradigm-of-wearable?redirectedFrom=fulltext">
+        <span class="papertitle">Neuro-Mechanical AI fusion: A paradigm of wearable assistance for cervical impairments</span>
+      </a>
+      <br>
+      <a href="#">Sai Rohit Muralikrishnan</a>, 
+      <a href="#">Manish S. Kumar</a>, 
+      <a href="#">R. Kalaipriyan</a>, 
+      <a href="#">Arockia Selvakumar Arockia Doss</a>
+      <br>
+      <em>RIACT'23</em>
+      <br>
+      <a href="https://pubs.aip.org/aip/acp/article-abstract/3216/1/050004/3305247/Neuro-Mechanical-AI-fusion-A-paradigm-of-wearable?redirectedFrom=fulltext">AIP Publication Link</a>
+      <p>The paper introduces a dynamic wearable assistive cervical collar that uses AI and sensors to monitor neck movements, providing personalized support for people with neck impairments to improve mobility, posture, and recovery.</p>
+    </td>
+  </tr>
+</table>
+<table>
+  <!-- Achievements Section -->
+  <tr>
+    <td style="padding:20px;width:100%;vertical-align:middle">
+      <h2>Achievements</h2>
+      <ul>
+        <li>Outstanding Presentation Award at RIACT'23.</li>
+        <li>Finalist at Techgium'22 conducted by Larsen & Toubro, with over 30,000 participants across India.</li>
+        <li>Awarded the Mitacs Globalink Research Fellowship.</li>
+        <li>Presented at Randy Kobes Symposium'22.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+<h2>Skills</h2>
+<div class="skills-container">
+    <div class="skill-card">
+        <img src="https://img.icons8.com/color/48/000000/python.png" alt="Python">
+        <p>Python</p>
+    </div>
+    <div class="skill-card">
+        <img src="https://img.icons8.com/color/48/000000/pytorch.png" alt="PyTorch">
+        <p>PyTorch</p>
+    </div>
+    <div class="skill-card">
+        <img src="https://img.icons8.com/color/48/000000/tensorflow.png" alt="TensorFlow">
+        <p>TensorFlow</p>
+    </div>
+    <div class="skill-card">
+        <img src="https://img.icons8.com/color/48/000000/c-plus-plus-logo.png" alt="C++">
+        <p>C++</p>
+    </div>
+    <div class="skill-card">
+        <img src="https://img.icons8.com/color/48/000000/git.png" alt="Git">
+        <p>Git</p>
+    </div>
+    <div class="skill-card">
+        <img src="https://img.icons8.com/color/48/000000/microsoft-azure.png" alt="Azure">
+        <p>Azure</p>
+    </div>
+    <div class="skill-card">
+        <img src="https://img.icons8.com/color/48/000000/opencv.png" alt="OpenCV">
+        <p>OpenCV</p>
+    </div>
+    <div class="skill-card">
+        <img src="https://img.icons8.com/ios-filled/50/000000/artificial-intelligence.png" alt="Langchain">
+        <p>Langchain</p>
+    </div>
+    <div class="skill-card">
+        <img src="https://img.icons8.com/dusk/48/000000/artificial-intelligence.png" alt="LlamaIndex">
+        <p>LlamaIndex</p>
+    </div>
+    <div class="skill-card">
+        <img src="https://img.icons8.com/color/48/000000/robot.png" alt="Gazebo">
+        <p>Gazebo</p>
+    </div>
+    <div class="skill-card">
+        <img src="https://img.icons8.com/color/48/000000/robot-2.png" alt="ROS">
+        <p>ROS</p>
+    </div>
+    <div class="skill-card">
+        <img src="https://img.icons8.com/color/48/000000/keras.png" alt="Keras">
+        <p>Keras</p>
+    </div>
+    <div class="skill-card">
+        <img src="https://img.icons8.com/color/48/000000/machine-learning.png" alt="Reinforcement Learning">
+        <p>Reinforcement Learning</p>
+    </div>
+    <div class="skill-card">
+        <img src="https://img.icons8.com/color/48/000000/solidworks.png" alt="SolidWorks">
+        <p>SolidWorks</p>
+    </div>
+    <div class="skill-card">
+        <img src="https://img.icons8.com/color/48/000000/matlab.png" alt="MATLAB">
+        <p>MATLAB</p>
+    </div>
+    <div class="skill-card">
+        <img src="https://img.icons8.com/color/48/000000/airsim.png" alt="Airsim">
+        <p>Airsim</p>
+    </div>
+</div>
+
+<!-- CSS -->
+<style>
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skill-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.2s ease-in-out;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+}
+
+.skill-card img {
+    width: 48px;
+    height: 48px;
+}
+
+.skill-card p {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+</style>
+
+
+  </body>
+</html>
