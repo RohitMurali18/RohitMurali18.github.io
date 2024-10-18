@@ -495,6 +495,57 @@ h2 {
     text-align: left;
     margin-bottom: 20px;
 }
+@media only screen and (max-width: 768px) {
+    .profile {
+        padding: 10px;
+    }
+
+    .profile img {
+        width: 80%; /* Reduce the image size */
+        margin: 0 auto;
+    }
+
+    /* For smaller screens, stack timeline items vertically */
+    .timeline::after {
+        left: 20px; /* Adjust the timeline line position */
+    }
+
+    .container {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .left, .right {
+        left: 0;
+        width: 100%; /* Ensure the containers take the full width on small screens */
+    }
+
+    .circle {
+        left: -25px; /* Center the circles in mobile view */
+    }
+
+    .content {
+        padding: 15px;
+        margin-left: 0;
+        text-align: left; /* Align text to left */
+    }
+
+    .contact-links a {
+        display: block; /* Stack contact links vertically */
+        margin-bottom: 10px;
+    }
+
+    .skills-container {
+        justify-content: center; /* Center skills on smaller screens */
+    }
+
+    .skill-card {
+        width: 45%; /* Reduce skill card size to fit on mobile */
+        margin-bottom: 15px;
+    }
+}
+
 </style>
 </body>
 </html>
