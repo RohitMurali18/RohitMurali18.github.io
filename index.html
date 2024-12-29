@@ -184,12 +184,12 @@
         margin-right: 20px;
       }
 
+      /* Force uniform 16:9 images, bigger size */
       .project-thumbnail img {
-        width: 200px;     /* On larger screens */
-        max-width: 100%;  /* Shrink if screen is narrow */
-        height: auto;
+        width: 400px;      /* bigger fixed width */
+        height: 225px;     /* matching 16:9 ratio -> 400:225 */
+        object-fit: cover; /* crop edges to maintain ratio */
         border-radius: 4px;
-        object-fit: cover;
       }
 
       .project-details {
@@ -237,9 +237,10 @@
           margin-right: 0;
           margin-bottom: 10px;
         }
+        /* On small screens, let image be flexible again */
         .project-thumbnail img {
           width: 100%;
-          max-width: 100%;
+          height: auto;
         }
       }
 
