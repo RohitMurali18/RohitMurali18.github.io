@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sai Rohit Muralikrishan</title> 
-    <meta name="author" content="Sai Rohit Muralikrishan">
+    <title>Sai Rohit Muralikrishnan</title> 
+    <meta name="author" content="Sai Rohit Muralikrishnan">
     <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
     
     <style>
@@ -172,7 +172,7 @@
         <tr>
           <td style="padding:2.5%;width:63%;vertical-align:middle">
             <p class="name">
-              Sai Rohit Muralikrishan
+              Sai Rohit Muralikrishnan
             </p>
             <p>
               I am a first-year graduate student at the <a href="https://illinois.edu/">University of Illinois Urbana-Champaign</a>, majoring in Autonomy and Robotics.
@@ -320,6 +320,105 @@
         </div>
     </div>
 </div>
+
+<!-- Projects Section -->
+<div class="projects-container">
+
+    <!-- Project #1 -->
+    <div class="project-item">
+      <div class="project-thumbnail">
+        <!-- Replace with your actual image or GIF path -->
+        <img src="images/racevideo.gif" alt="Drone Project">
+      </div>
+      <div class="project-details">
+        <h3 class="project-title">Autonomous Drone Racing with Vision-Aided Minimum Snap Trajectory Generation and MPC-Based Velocity Control</h3>
+        <p class="authors">
+          Sai Rohit Muralikrishnan, Murali Karteek, Abhiram Annaluru, Ayush Tarachandani
+        </p>
+        <p class="links">
+          <a href="https://github.com/muralikarteek7/Drone_Vision_control" target="_blank">Github</a>
+        </p>
+        <p class="description">
+            Developed a vision-guided system in AirSim for drone racing, featuring minimum snap trajectory generation with spline interpolation. Implemented MPC for planar control and PID for elevation to ensure precise gate navigation and real-time adjustments. Enhanced accuracy and robustness against disturbances, optimizing speed and safety.
+        </p>
+      </div>
+    </div>
+  
+    <!-- Project #2 -->
+    <div class="project-item">
+      <div class="project-thumbnail">
+        <img src="images/output.gif" alt="VLM4autonomy">
+      </div>
+      <div class="project-details">
+        <h3 class="project-title">FROM VISION TO UNDERSTANDING : Leveraging VLMs to enable autonomous driving decisions</h3>
+        <p class="authors">
+          Sai Rohit Muralikrishnan, Murali Karteek, Brijesh Muthumanickam, Sridhar T
+        </p>
+        <p class="links">
+          <a href="https://github.com/muralikarteek7/VLM4Autonomy-" target="_blank">Github</a>
+        </p>
+        <p class="description">
+            Integrated advanced VLMs like SpatialBot with multi-camera setups to improve decision-making in autonomous driving. Developed robust pipelines for object tracking using YOLOv8 and SAM2, and ego-vehicle motion estimation with optical flow and depth mapping. Enhanced scene understanding and motion validation, optimizing real-time navigation in dynamic environments.
+        </p>
+      </div>
+    </div>
+  
+    <!-- Project #3 -->
+    <div class="project-item">
+      <div class="project-thumbnail">
+        <img src="images/demo.gif" alt="SketchUR3">
+      </div>
+      <div class="project-details">
+        <h3 class="project-title">SketchUR3</h3>
+        <p class="authors">
+          Sai Rohit Muralikrishnan, Mei Han
+        </p>
+        <p class="links">
+          <a href="https://github.com/RohitMurali18/SketchUR3" target="_blank">Github</a>
+        </p>
+        <p class="description">
+            Implemented a ROS-based framework integrating OpenCV for contour detection, coordinate transformations for workspace mapping, and motion planning (MoveJ and MoveL) to replicate images with high precision.
+        </p>
+      </div>
+    </div>
+
+    <!-- Project #4 -->
+    <div class="project-item">
+        <div class="project-thumbnail">
+          <img src="images/SmartCaravan.png" alt="SmartCaravan">
+        </div>
+        <div class="project-details">
+          <h3 class="project-title">Smart Caravan</h3>
+          <p class="authors">
+            Sai Rohit Muralikrishnan, Rathan Nidhi Kumaran, Shalen Brisil
+          </p>
+          <p class="description">
+            Ideated an autonomous caravan solution incorporating LIDAR, RADAR, GPS, and biometric security to enhance safety and automation. Designed a dual-energy system and space-saving amenities for off-grid travel, earning finalist recognition among 30,000+ participants in the Techgium 2021 competition.
+          </p>
+        </div>
+      </div>
+
+      <!-- Project #5 -->
+    <div class="project-item">
+        <div class="project-thumbnail">
+          <img src="images/tarp.png" alt="TARP">
+        </div>
+        <div class="project-details">
+          <h3 class="project-title"> IoT-Based Water Quality Monitoring and Prediction </h3>
+          <p class="authors">
+            Sai Rohit Muralikrishnan
+          </p>
+          <p class="links">
+            <a href="data/WaterQualityPrediction.pdf" target="_blank">PDF</a>
+          </p>
+          <p class="description">
+            Developed an IoT system using pH, temperature, and conductivity sensors with neural networks to monitor and predict water quality in real time, achieving 88% accuracy and enabling proactive measures for household and environmental applications through cloud integration.
+          </p>
+        </div>
+      </div>
+  
+  </div> <!-- End of Projects Section -->
+  
 
 
 
@@ -534,6 +633,97 @@ h2 {
     .contact-links a {
         display: block; /* Stack contact links vertically */
         margin-bottom: 10px;
+    }
+
+    .projects-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+    }
+
+    /* Each project "card" */
+    .project-item {
+    display: flex;
+    background-color: #fff; /* White background to match your screenshot */
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for separation */
+    }
+
+    /* Image on the left */
+    .project-thumbnail {
+    margin-right: 20px; 
+    }
+    .project-thumbnail img {
+    width: 200px;     /* Adjust as necessary */
+    height: auto;
+    border-radius: 4px;
+    object-fit: cover; /* Crop if needed */
+    }
+
+    /* Text details on the right */
+    .project-details {
+    flex: 1; /* Take remaining horizontal space */
+    }
+
+    /* Title in blue */
+    .project-title {
+    font-size: 18px;
+    line-height: 1.3;
+    margin: 0 0 6px; 
+    color: #0066cc;  /* Similar to screenshot */
+    }
+
+    /* Authors line */
+    .authors {
+    margin: 0 0 6px; 
+    font-size: 14px;
+    color: #333;
+    }
+
+    /* Citation (italic) */
+    .citation {
+    margin: 0 0 6px; 
+    font-size: 14px;
+    font-style: italic;
+    color: #333;
+    }
+
+    /* Links: project page / arXiv */
+    .links {
+    margin: 0 0 8px;
+    }
+    .links a {
+    text-decoration: none;
+    color: #0066cc;
+    margin-right: 10px;
+    }
+    .links a:hover {
+    text-decoration: underline;
+    }
+
+    /* Description paragraph */
+    .description {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #333;
+    }
+
+    /* Responsive stacking for smaller screens */
+    @media (max-width: 768px) {
+    .project-item {
+        flex-direction: column;
+    }
+    .project-thumbnail {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .project-thumbnail img {
+        width: 100%;
+        max-width: 100%;
+    }
     }
 
     .skills-container {
